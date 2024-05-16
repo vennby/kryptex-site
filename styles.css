@@ -323,13 +323,13 @@ html {
 
 .timeline {
     position: relative;
-    width: 100%; /* Adjust as needed */
+    width: 100%;
     margin: 0 auto;
-    padding-top: 20px; /* Adjust as needed */
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: calc(100% - 20px); /* Initial height minus padding */
+    height: calc(100% - 20px);
 }
 
 .timeline:before {
@@ -337,39 +337,39 @@ html {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 2px; /* Width of the vertical line */
+    width: 2px;
     height: 100%;
-    background-color: #fff; /* Color of the vertical line */
+    background-color: #fff;
 }
 
 .timeline-item {
     position: relative;
     display: flex;
     align-items: flex-start;
-    margin-bottom: 60px; /* Increased distance between timeline items */
+    margin-bottom: 60px;
 }
 
 .timeline-content {
     background-color: #000000;
     padding: 20px;
     border-radius: 8px;
-    text-align: center; /* Align text in the center */
+    text-align: center;
 }
 
 .timeline-item:last-child {
-    margin-bottom: 0; /* Remove margin for the last child */
+    margin-bottom: 0;
 }
 
 .timeline-item:last-child .timeline-content {
-    margin-bottom: 20px; /* Add margin between last child and timeline */
+    margin-bottom: 20px;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    margin-left: auto; /* Adjust as needed */
-    margin-right: auto; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
-    margin-left: auto; /* Adjust as needed */
-    margin-right: auto; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
 }
