@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.options-container {
+    position: absolute;
+    top: calc(50% + 50px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    visibility: hidden;
+}
+
+.option {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    width: 100px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.option:hover {
+    background-color: rgba(192, 192, 192, 0.583);
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skill {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.skill-bx {
+    text-align: center;
+}
+
+.skill-bx h2 {
+    margin-bottom: 20px;
+}
+
+.skill-bx p {
+    margin-bottom: 40px;
+}
+
+.skill-slider {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-slider .item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skill-slider .item img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.skill-slider .item h5 {
+    font-size: 18px;
+}
+
+.circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.bar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, 50px, 100px, 0);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bar:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    transform-origin: bottom left;
+    transform: rotate(90deg);
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.project:last-child {
+    margin-right: 0;
+}
+
+.project h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #555;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-form input[type="submit"] {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace; 
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: floatIn 1.5s ease forwards;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar a:hover {
+    color: #fb7777;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+body {
+    padding-top: 60px
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.profile-picture {
+    width: 170px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    float: left;
+}
+
+.timeline {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto;
+    padding-top: 20px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 20px); /* Initial height minus padding */
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px; /* Width of the vertical line */
+    height: 100%;
+    background-color: #fff; /* Color of the vertical line */
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px; /* Increased distance between timeline items */
+}
+
+.timeline-content {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; /* Align text in the center */
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0; /* Remove margin for the last child */
+}
+
+.timeline-item:last-child .timeline-content {
+    margin-bottom: 20px; /* Add margin between last child and timeline */
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: auto; /* Adjust as needed */
+    margin-right: auto; /* Adjust as needed */
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto; /* Adjust as needed */
+    margin-right: auto; /* Adjust as needed */
+}
